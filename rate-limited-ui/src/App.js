@@ -23,7 +23,7 @@ function App() {
     if (cooldown > 0) return;
 
     try {
-      const res = await fetch("http://localhost:8080/api/test");
+      const res = await fetch("https://limitify-ks8x.onrender.com/api/test");
 
       // ❌ NOT OK RESPONSE (429, 500 etc.)
       if (!res.ok) {
